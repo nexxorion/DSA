@@ -18,3 +18,27 @@ function containsDuplicate(nums) {
     
     return false;
 }
+
+
+function convertCelsiusToFahrenheit() {
+  // Prompt the user to enter a temperature in Celsius
+  let celsius = prompt("Please enter the temperature in Celsius:");
+  
+  // Convert the input to a number in case it's a string
+  celsius = Number(celsius);
+  
+  // Check if the input is a valid number
+  if (!isNaN(celsius)) {
+    // Convert the temperature to Fahrenheit
+    let fahrenheit = (celsius * 9/5) + 32;
+    
+    // Display the converted temperature
+    alert(`${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F.`);
+  } else {
+    // Inform the user if the input was not a valid number
+    alert("Please enter a valid number for the temperature.");
+  }
+}
+
+// Call the function to execute
+convertCelsiusToFahrenheit();
