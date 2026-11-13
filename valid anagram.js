@@ -32,3 +32,29 @@ function isAnagram(s, t) {
 // Test cases
 console.log(isAnagram("anagram", "nagaram")); // true
 console.log(isAnagram("rat", "car"));         // false
+
+
+// New DSA Problem 
+
+/**
+ * Problem: Single Number
+ * Description: Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+ * 
+ * @param {number[]} nums
+ * @return {number}
+ */
+function singleNumber(nums) {
+    let result = 0;
+    
+    // XORing a number with itself results in 0. 
+    // All duplicate numbers will cancel each other out, leaving only the single number.
+    for (const num of nums) {
+        result ^= num;
+    }
+    
+    return result;
+}
+
+// Test cases
+console.log(singleNumber([2, 2, 1]));       // 1
+console.log(singleNumber([4, 1, 2, 1, 2])); // 4
