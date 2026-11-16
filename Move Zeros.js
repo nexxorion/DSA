@@ -27,17 +27,9 @@ moveZeroes(nums);
 console.log(nums); // [1, 3, 12, 0, 0]
 
 
-/**
- * Problem: Fizz Buzz
- * Return an array containing:
- * - "FizzBuzz" for multiples of 3 and 5
- * - "Fizz" for multiples of 3
- * - "Buzz" for multiples of 5
- * - Number as a string otherwise
- *
- * @param {number} n
- * @return {string[]}
- */
+// Another Problem In One File Only...........
+
+
 function fizzBuzz(n) {
     const result = [];
 
@@ -55,11 +47,7 @@ function fizzBuzz(n) {
 
     return result;
 }
-
-// Example
 console.log(fizzBuzz(15));
 
-// Output:
-// ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7",
-//  "8", "Fizz", "Buzz", "11", "Fizz", "13",
-//  "14", "FizzBuzz"]
+
+// Leaving here due to headache i'll complete it as soon as possible.........
